@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapios</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lista de Cardapios</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Detalhes</th>
+                <th>Preco</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% Cardapios.forEach(function(cardapio) { %>
+                <tr>
+                    <td>
+                        <%= cardapio.id %>
+                    </td>
+                    <td>
+                        <%= cardapio.produto %>
+                    </td>
+                    <td>
+                        <%= cardapio.detalhes %>
+                    </td>
+                    <td>
+                        <%= cardapio.preco %>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

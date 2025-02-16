@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardapio</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            flex: 1;
+            padding: 5px;
+        }
+        
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cardapio</h1>
+    <form>
+        <div class="form-group">
+            <label for="site">Poduto:</label>
+            <input type="text" id="site" name="site" value="<%= cardapio.produto %>">
+        </div>
+        
+        <div class="form-group">
+            <label for="detalhes">Detalhes:</label>
+            <textarea id="detalhes" name="detalhes"><%= cardapio.detalhes %></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="link">Preço:</label>
+            <input type="text" id="link" name="link" value="<%= cardapio.preco %>">
+        </div>
+    </form>
+</body>
+</html>
