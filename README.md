@@ -2,7 +2,7 @@
 
 <p align="center">
  <a href="#Tecnologias">Tecnologias</a> • 
- <a href="#started">Getting Started</a> • 
+ <a href="#Começando">Começando</a> • 
  <a href="#routes">API Endpoints</a> •
  <a href="#colab">Collaborators</a> •
  <a href="#contribute">Contribute</a>
@@ -18,14 +18,6 @@
 - NodeJS
 - Ejs
 - Mysql
+- Sequelize
 
-<h2 id="started">🚀 Getting started</h2>
-
-Here you describe how to run your project locally
-
-<h3>Prerequisites</h3>
-
-Here you list all prerequisites necessary for running your project. For example:
-
-- [NodeJS](https://github.com/)
-- [Git 2](https://github.com)
+<h2 id="Começando">🚀 Começando</h2>
