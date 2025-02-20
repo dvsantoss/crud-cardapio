@@ -3,7 +3,7 @@
 <p align="center">
  <a href="#Tecnologias">• Tecnologias</a> 
  <a href="#Começando">• Começando</a> 
- <a href="#Rotas">• API Endpoints</a>
+ <a href="#Rotas">• Rotas da API</a>
 </p>
 
 <p align="center">
@@ -34,9 +34,13 @@ npm install
 npm start
 ```
 
+<p>
+Para executar as operações CRUD, remova os comentários do código eliminando as barras ( // ), faça as edições conforme necessário e execute o terminal utilizando o comando npm start.
+</p>
+
 <h2 id="Rotas">📍 Rotas da API</h2>
 ​
-| <kbd>GET /cardapios</kbd>| retorna todos os itens do cardápio definindo limites através dos atributos:
+| <kbd>GET /cardapios</kbd> | retorna todos os itens do cardápio definindo limites através dos atributos que estão no código:
 
 <p>
 
@@ -46,11 +50,7 @@ const offset = parseInt(req.query.offset) || 0;
 ```
 </p>
 
-<br/>
 | <kbd>GET /cardapio/9</kbd>     | retorna os itens do cardápio por meio do id do item.
-
-<br/>
-
 
 <h3> Método GET</h3>
 
